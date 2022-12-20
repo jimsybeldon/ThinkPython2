@@ -15,6 +15,9 @@ import turtle
 
 from polygon import arc
 
+"""very cool- first time got a function that exiting in other py code.  In this case we 
+went to (from) polygon and will use (import) arc."""
+
 
 def petal(t, r, angle):
     """Draws a petal using two arcs.
@@ -25,7 +28,7 @@ def petal(t, r, angle):
     """
     for i in range(2):
         arc(t, r, angle)
-        t.lt(180-angle)
+        t.lt(180 - angle)
 
 
 def flower(t, n, r, angle):
@@ -38,7 +41,7 @@ def flower(t, n, r, angle):
     """
     for i in range(n):
         petal(t, r, angle)
-        t.lt(360.0/n)
+        t.lt(360.0 / n)
 
 
 def move(t, length):
